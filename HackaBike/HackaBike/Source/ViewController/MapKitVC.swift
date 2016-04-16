@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MapKitVC
+import MapKit
 
 class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, GooglePlacesAutocompleteDelegate {
     

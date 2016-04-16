@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752CB9D41CC2E28900566501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752CB9D01CC2E28900566501 /* LaunchScreen.storyboard */; };
+		752CB9D51CC2E28900566501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752CB9D21CC2E28900566501 /* Main.storyboard */; };
 		754FED091CC2DE5300D19E9E /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FECF81CC2DE5300D19E9E /* JSSAlertView.swift */; };
 		754FED0A1CC2DE5300D19E9E /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FECFB1CC2DE5300D19E9E /* SCLAlertView.m */; };
 		754FED0B1CC2DE5300D19E9E /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FECFD1CC2DE5300D19E9E /* SCLAlertViewResponder.m */; };
@@ -15,9 +17,7 @@
 		754FED0E1CC2DE5300D19E9E /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED041CC2DE5300D19E9E /* SCLTextView.m */; };
 		754FED0F1CC2DE5300D19E9E /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED061CC2DE5300D19E9E /* SCLTimerDisplay.m */; };
 		754FED101CC2DE5300D19E9E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED081CC2DE5300D19E9E /* UIImage+ImageEffects.m */; };
-		7560663E1CC2BE2E00D054FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7560663C1CC2BE2E00D054FD /* Main.storyboard */; };
 		756066431CC2BE2E00D054FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756066421CC2BE2E00D054FD /* Assets.xcassets */; };
-		756066461CC2BE2E00D054FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756066441CC2BE2E00D054FD /* LaunchScreen.storyboard */; };
 		756066511CC2BE2E00D054FD /* HackaBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066501CC2BE2E00D054FD /* HackaBikeTests.swift */; };
 		7560665C1CC2BE2E00D054FD /* HackaBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560665B1CC2BE2E00D054FD /* HackaBikeUITests.swift */; };
 		7560667D1CC2C4F800D054FD /* HackaBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7560667C1CC2C4F800D054FD /* HackaBike.xcdatamodeld */; };
@@ -29,8 +29,8 @@
 		756066AF1CC2D2DB00D054FD /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A41CC2D2DB00D054FD /* Singleton.swift */; };
 		756066B11CC2D2DB00D054FD /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A81CC2D2DB00D054FD /* MapHelper.swift */; };
 		756066B21CC2D2DB00D054FD /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A91CC2D2DB00D054FD /* PinAnnotation.swift */; };
-		756066B41CC2D5EC00D054FD /* MapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066B31CC2D5EC00D054FD /* MapKitVC.swift */; };
-		756066D81CC2DD7D00D054FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 756066D71CC2DD7D00D054FD /* Info.plist */; };
+		75AC8A6F1CC2E21900D535D7 /* MapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FED141CC2E1B700D19E9E /* MapKitVC.swift */; };
+		8B5AD9431CC2DCDA00770EA0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5AD9421CC2DCDA00770EA0 /* FBSDKCoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		752CB9D11CC2E28900566501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HackaBike/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		752CB9D31CC2E28900566501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HackaBike/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		754FECF81CC2DE5300D19E9E /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
 		754FECFA1CC2DE5300D19E9E /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
 		754FECFB1CC2DE5300D19E9E /* SCLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertView.m; sourceTree = "<group>"; };
@@ -67,10 +69,10 @@
 		754FED061CC2DE5300D19E9E /* SCLTimerDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTimerDisplay.m; sourceTree = "<group>"; };
 		754FED071CC2DE5300D19E9E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		754FED081CC2DE5300D19E9E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		754FED131CC2E11F00D19E9E /* HackaBike-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HackaBike-Bridging-Header.h"; path = "HackaBike/HackaBike-Bridging-Header.h"; sourceTree = "<group>"; };
+		754FED141CC2E1B700D19E9E /* MapKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
 		756066351CC2BE2D00D054FD /* HackaBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackaBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7560663D1CC2BE2E00D054FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		756066421CC2BE2E00D054FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		756066451CC2BE2E00D054FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		756066421CC2BE2E00D054FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HackaBike/Assets.xcassets; sourceTree = "<group>"; };
 		7560664C1CC2BE2E00D054FD /* HackaBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackaBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		756066501CC2BE2E00D054FD /* HackaBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackaBikeTests.swift; sourceTree = "<group>"; };
 		756066521CC2BE2E00D054FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,9 +88,8 @@
 		756066A41CC2D2DB00D054FD /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		756066A81CC2D2DB00D054FD /* MapHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
 		756066A91CC2D2DB00D054FD /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
-		756066B31CC2D5EC00D054FD /* MapKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
-		756066D11CC2DB9D00D054FD /* HackaBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackaBike-Bridging-Header.h"; sourceTree = "<group>"; };
-		756066D71CC2DD7D00D054FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		756066D71CC2DD7D00D054FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = HackaBike/Info.plist; sourceTree = "<group>"; };
+		8B5AD9421CC2DCDA00770EA0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,10 +200,10 @@
 		7560666F1CC2C2F200D054FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				756066D11CC2DB9D00D054FD /* HackaBike-Bridging-Header.h */,
+				752CB9D01CC2E28900566501 /* LaunchScreen.storyboard */,
+				752CB9D21CC2E28900566501 /* Main.storyboard */,
+				754FED131CC2E11F00D19E9E /* HackaBike-Bridging-Header.h */,
 				756066421CC2BE2E00D054FD /* Assets.xcassets */,
-				756066441CC2BE2E00D054FD /* LaunchScreen.storyboard */,
-				7560663C1CC2BE2E00D054FD /* Main.storyboard */,
 				756066D71CC2DD7D00D054FD /* Info.plist */,
 			);
 			path = Resources;
@@ -219,6 +220,7 @@
 		7560669A1CC2D2DB00D054FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B5AD9421CC2DCDA00770EA0 /* FBSDKCoreKit.framework */,
 				754FECF71CC2DE5300D19E9E /* JSSAlert */,
 				754FECF91CC2DE5300D19E9E /* SCLAlertView */,
 				7560669B1CC2D2DB00D054FD /* GooglePlaces */,
@@ -260,7 +262,7 @@
 		756066A51CC2D2DB00D054FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				756066B31CC2D5EC00D054FD /* MapKitVC.swift */,
+				754FED141CC2E1B700D19E9E /* MapKitVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -379,10 +381,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756066461CC2BE2E00D054FD /* LaunchScreen.storyboard in Resources */,
 				756066431CC2BE2E00D054FD /* Assets.xcassets in Resources */,
-				756066D81CC2DD7D00D054FD /* Info.plist in Resources */,
-				7560663E1CC2BE2E00D054FD /* Main.storyboard in Resources */,
+				752CB9D51CC2E28900566501 /* Main.storyboard in Resources */,
+				752CB9D41CC2E28900566501 /* LaunchScreen.storyboard in Resources */,
 				756066AC1CC2D2DB00D054FD /* GooglePlacesCell.xib in Resources */,
 				756066AB1CC2D2DB00D054FD /* GooglePlacesAutocomplete.xib in Resources */,
 			);
@@ -409,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AC8A6F1CC2E21900D535D7 /* MapKitVC.swift in Sources */,
 				754FED101CC2DE5300D19E9E /* UIImage+ImageEffects.m in Sources */,
 				754FED0A1CC2DE5300D19E9E /* SCLAlertView.m in Sources */,
 				754FED0D1CC2DE5300D19E9E /* SCLButton.m in Sources */,
@@ -416,7 +418,6 @@
 				756066B21CC2D2DB00D054FD /* PinAnnotation.swift in Sources */,
 				754FED0F1CC2DE5300D19E9E /* SCLTimerDisplay.m in Sources */,
 				756066AE1CC2D2DB00D054FD /* AppDelegate.swift in Sources */,
-				756066B41CC2D5EC00D054FD /* MapKitVC.swift in Sources */,
 				756066AA1CC2D2DB00D054FD /* GooglePlacesAutocomplete.swift in Sources */,
 				756066AD1CC2D2DB00D054FD /* GooglePlacesTableViewCell.swift in Sources */,
 				756066AF1CC2D2DB00D054FD /* Singleton.swift in Sources */,
@@ -460,22 +461,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7560663C1CC2BE2E00D054FD /* Main.storyboard */ = {
+		752CB9D01CC2E28900566501 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7560663D1CC2BE2E00D054FD /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		756066441CC2BE2E00D054FD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				756066451CC2BE2E00D054FD /* Base */,
+				752CB9D11CC2E28900566501 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
+			sourceTree = "<group>";
+		};
+		752CB9D21CC2E28900566501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				752CB9D31CC2E28900566501 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -567,11 +566,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HackaBike/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/{username}/Documents/FacebookSDK";
 				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulo.HackaBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HackaBike-Bridging-Header";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -580,11 +584,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HackaBike/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/{username}/Documents/FacebookSDK";
 				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulo.HackaBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HackaBike-Bridging-Header";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Paulo Henrique Leite. All rights reserved.
 //
 
-import MapKitVC
+import MapKit
 import Foundation
 import UIKit
 
