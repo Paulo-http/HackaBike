@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754FED091CC2DE5300D19E9E /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FECF81CC2DE5300D19E9E /* JSSAlertView.swift */; };
+		754FED0A1CC2DE5300D19E9E /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FECFB1CC2DE5300D19E9E /* SCLAlertView.m */; };
+		754FED0B1CC2DE5300D19E9E /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FECFD1CC2DE5300D19E9E /* SCLAlertViewResponder.m */; };
+		754FED0C1CC2DE5300D19E9E /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FECFF1CC2DE5300D19E9E /* SCLAlertViewStyleKit.m */; };
+		754FED0D1CC2DE5300D19E9E /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED011CC2DE5300D19E9E /* SCLButton.m */; };
+		754FED0E1CC2DE5300D19E9E /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED041CC2DE5300D19E9E /* SCLTextView.m */; };
+		754FED0F1CC2DE5300D19E9E /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED061CC2DE5300D19E9E /* SCLTimerDisplay.m */; };
+		754FED101CC2DE5300D19E9E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FED081CC2DE5300D19E9E /* UIImage+ImageEffects.m */; };
 		7560663E1CC2BE2E00D054FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7560663C1CC2BE2E00D054FD /* Main.storyboard */; };
 		756066431CC2BE2E00D054FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756066421CC2BE2E00D054FD /* Assets.xcassets */; };
 		756066461CC2BE2E00D054FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756066441CC2BE2E00D054FD /* LaunchScreen.storyboard */; };
 		756066511CC2BE2E00D054FD /* HackaBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066501CC2BE2E00D054FD /* HackaBikeTests.swift */; };
 		7560665C1CC2BE2E00D054FD /* HackaBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560665B1CC2BE2E00D054FD /* HackaBikeUITests.swift */; };
-		756066741CC2C2F200D054FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 756066701CC2C2F200D054FD /* Info.plist */; };
 		7560667D1CC2C4F800D054FD /* HackaBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7560667C1CC2C4F800D054FD /* HackaBike.xcdatamodeld */; };
 		756066AA1CC2D2DB00D054FD /* GooglePlacesAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560669D1CC2D2DB00D054FD /* GooglePlacesAutocomplete.swift */; };
 		756066AB1CC2D2DB00D054FD /* GooglePlacesAutocomplete.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7560669E1CC2D2DB00D054FD /* GooglePlacesAutocomplete.xib */; };
@@ -20,17 +27,10 @@
 		756066AD1CC2D2DB00D054FD /* GooglePlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A01CC2D2DB00D054FD /* GooglePlacesTableViewCell.swift */; };
 		756066AE1CC2D2DB00D054FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A31CC2D2DB00D054FD /* AppDelegate.swift */; };
 		756066AF1CC2D2DB00D054FD /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A41CC2D2DB00D054FD /* Singleton.swift */; };
-		756066B01CC2D2DB00D054FD /* MapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A61CC2D2DB00D054FD /* MapKitVC.swift */; };
 		756066B11CC2D2DB00D054FD /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A81CC2D2DB00D054FD /* MapHelper.swift */; };
 		756066B21CC2D2DB00D054FD /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066A91CC2D2DB00D054FD /* PinAnnotation.swift */; };
-		756066B41CC2D5EC00D054FD /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066B31CC2D5EC00D054FD /* testViewController.swift */; };
-		756066C51CC2D88300D054FD /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066B71CC2D88300D054FD /* UIImage+ImageEffects.m */; };
-		756066C61CC2D88300D054FD /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066B91CC2D88300D054FD /* SCLAlertView.m */; };
-		756066C71CC2D88300D054FD /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066BB1CC2D88300D054FD /* SCLButton.m */; };
-		756066C81CC2D88300D054FD /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066BD1CC2D88300D054FD /* SCLAlertViewResponder.m */; };
-		756066C91CC2D88300D054FD /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066BF1CC2D88300D054FD /* SCLAlertViewStyleKit.m */; };
-		756066CA1CC2D88300D054FD /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066C21CC2D88300D054FD /* SCLTimerDisplay.m */; };
-		756066CB1CC2D88300D054FD /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 756066C41CC2D88300D054FD /* SCLTextView.m */; };
+		756066B41CC2D5EC00D054FD /* MapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756066B31CC2D5EC00D054FD /* MapKitVC.swift */; };
+		756066D81CC2DD7D00D054FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 756066D71CC2DD7D00D054FD /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		754FECF81CC2DE5300D19E9E /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
+		754FECFA1CC2DE5300D19E9E /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
+		754FECFB1CC2DE5300D19E9E /* SCLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertView.m; sourceTree = "<group>"; };
+		754FECFC1CC2DE5300D19E9E /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewResponder.h; sourceTree = "<group>"; };
+		754FECFD1CC2DE5300D19E9E /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewResponder.m; sourceTree = "<group>"; };
+		754FECFE1CC2DE5300D19E9E /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
+		754FECFF1CC2DE5300D19E9E /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
+		754FED001CC2DE5300D19E9E /* SCLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLButton.h; sourceTree = "<group>"; };
+		754FED011CC2DE5300D19E9E /* SCLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLButton.m; sourceTree = "<group>"; };
+		754FED021CC2DE5300D19E9E /* SCLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLMacros.h; sourceTree = "<group>"; };
+		754FED031CC2DE5300D19E9E /* SCLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLTextView.h; sourceTree = "<group>"; };
+		754FED041CC2DE5300D19E9E /* SCLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTextView.m; sourceTree = "<group>"; };
+		754FED051CC2DE5300D19E9E /* SCLTimerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLTimerDisplay.h; sourceTree = "<group>"; };
+		754FED061CC2DE5300D19E9E /* SCLTimerDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTimerDisplay.m; sourceTree = "<group>"; };
+		754FED071CC2DE5300D19E9E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		754FED081CC2DE5300D19E9E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		756066351CC2BE2D00D054FD /* HackaBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackaBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7560663D1CC2BE2E00D054FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		756066421CC2BE2E00D054FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +77,6 @@
 		756066571CC2BE2E00D054FD /* HackaBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackaBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7560665B1CC2BE2E00D054FD /* HackaBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackaBikeUITests.swift; sourceTree = "<group>"; };
 		7560665D1CC2BE2E00D054FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		756066701CC2C2F200D054FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7560669C1CC2D2DB00D054FD /* GooglePlacesAutocomplete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlacesAutocomplete.h; sourceTree = "<group>"; };
 		7560669D1CC2D2DB00D054FD /* GooglePlacesAutocomplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesAutocomplete.swift; sourceTree = "<group>"; };
 		7560669E1CC2D2DB00D054FD /* GooglePlacesAutocomplete.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GooglePlacesAutocomplete.xib; sourceTree = "<group>"; };
@@ -69,25 +84,11 @@
 		756066A01CC2D2DB00D054FD /* GooglePlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesTableViewCell.swift; sourceTree = "<group>"; };
 		756066A31CC2D2DB00D054FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756066A41CC2D2DB00D054FD /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		756066A61CC2D2DB00D054FD /* MapKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
 		756066A81CC2D2DB00D054FD /* MapHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
 		756066A91CC2D2DB00D054FD /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
-		756066B31CC2D5EC00D054FD /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
-		756066B61CC2D88300D054FD /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		756066B71CC2D88300D054FD /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		756066B81CC2D88300D054FD /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
-		756066B91CC2D88300D054FD /* SCLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertView.m; sourceTree = "<group>"; };
-		756066BA1CC2D88300D054FD /* SCLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLButton.h; sourceTree = "<group>"; };
-		756066BB1CC2D88300D054FD /* SCLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLButton.m; sourceTree = "<group>"; };
-		756066BC1CC2D88300D054FD /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewResponder.h; sourceTree = "<group>"; };
-		756066BD1CC2D88300D054FD /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewResponder.m; sourceTree = "<group>"; };
-		756066BE1CC2D88300D054FD /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
-		756066BF1CC2D88300D054FD /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
-		756066C01CC2D88300D054FD /* SCLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLMacros.h; sourceTree = "<group>"; };
-		756066C11CC2D88300D054FD /* SCLTimerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLTimerDisplay.h; sourceTree = "<group>"; };
-		756066C21CC2D88300D054FD /* SCLTimerDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTimerDisplay.m; sourceTree = "<group>"; };
-		756066C31CC2D88300D054FD /* SCLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLTextView.h; sourceTree = "<group>"; };
-		756066C41CC2D88300D054FD /* SCLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTextView.m; sourceTree = "<group>"; };
+		756066B31CC2D5EC00D054FD /* MapKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
+		756066D11CC2DB9D00D054FD /* HackaBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackaBike-Bridging-Header.h"; sourceTree = "<group>"; };
+		756066D71CC2DD7D00D054FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		754FECF71CC2DE5300D19E9E /* JSSAlert */ = {
+			isa = PBXGroup;
+			children = (
+				754FECF81CC2DE5300D19E9E /* JSSAlertView.swift */,
+			);
+			path = JSSAlert;
+			sourceTree = "<group>";
+		};
+		754FECF91CC2DE5300D19E9E /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				754FECFA1CC2DE5300D19E9E /* SCLAlertView.h */,
+				754FECFB1CC2DE5300D19E9E /* SCLAlertView.m */,
+				754FECFC1CC2DE5300D19E9E /* SCLAlertViewResponder.h */,
+				754FECFD1CC2DE5300D19E9E /* SCLAlertViewResponder.m */,
+				754FECFE1CC2DE5300D19E9E /* SCLAlertViewStyleKit.h */,
+				754FECFF1CC2DE5300D19E9E /* SCLAlertViewStyleKit.m */,
+				754FED001CC2DE5300D19E9E /* SCLButton.h */,
+				754FED011CC2DE5300D19E9E /* SCLButton.m */,
+				754FED021CC2DE5300D19E9E /* SCLMacros.h */,
+				754FED031CC2DE5300D19E9E /* SCLTextView.h */,
+				754FED041CC2DE5300D19E9E /* SCLTextView.m */,
+				754FED051CC2DE5300D19E9E /* SCLTimerDisplay.h */,
+				754FED061CC2DE5300D19E9E /* SCLTimerDisplay.m */,
+				754FED071CC2DE5300D19E9E /* UIImage+ImageEffects.h */,
+				754FED081CC2DE5300D19E9E /* UIImage+ImageEffects.m */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
 		7560662C1CC2BE2D00D054FD = {
 			isa = PBXGroup;
 			children = (
@@ -167,10 +198,11 @@
 		7560666F1CC2C2F200D054FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				756066D11CC2DB9D00D054FD /* HackaBike-Bridging-Header.h */,
 				756066421CC2BE2E00D054FD /* Assets.xcassets */,
 				756066441CC2BE2E00D054FD /* LaunchScreen.storyboard */,
 				7560663C1CC2BE2E00D054FD /* Main.storyboard */,
-				756066701CC2C2F200D054FD /* Info.plist */,
+				756066D71CC2DD7D00D054FD /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -186,7 +218,8 @@
 		7560669A1CC2D2DB00D054FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				756066B51CC2D86A00D054FD /* SCLAlertView */,
+				754FECF71CC2DE5300D19E9E /* JSSAlert */,
+				754FECF91CC2DE5300D19E9E /* SCLAlertView */,
 				7560669B1CC2D2DB00D054FD /* GooglePlaces */,
 			);
 			path = Frameworks;
@@ -226,8 +259,7 @@
 		756066A51CC2D2DB00D054FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				756066A61CC2D2DB00D054FD /* MapKitVC.swift */,
-				756066B31CC2D5EC00D054FD /* testViewController.swift */,
+				756066B31CC2D5EC00D054FD /* MapKitVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -239,28 +271,6 @@
 				756066A91CC2D2DB00D054FD /* PinAnnotation.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		756066B51CC2D86A00D054FD /* SCLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				756066B61CC2D88300D054FD /* UIImage+ImageEffects.h */,
-				756066B71CC2D88300D054FD /* UIImage+ImageEffects.m */,
-				756066B81CC2D88300D054FD /* SCLAlertView.h */,
-				756066B91CC2D88300D054FD /* SCLAlertView.m */,
-				756066BA1CC2D88300D054FD /* SCLButton.h */,
-				756066BB1CC2D88300D054FD /* SCLButton.m */,
-				756066BC1CC2D88300D054FD /* SCLAlertViewResponder.h */,
-				756066BD1CC2D88300D054FD /* SCLAlertViewResponder.m */,
-				756066BE1CC2D88300D054FD /* SCLAlertViewStyleKit.h */,
-				756066BF1CC2D88300D054FD /* SCLAlertViewStyleKit.m */,
-				756066C01CC2D88300D054FD /* SCLMacros.h */,
-				756066C11CC2D88300D054FD /* SCLTimerDisplay.h */,
-				756066C21CC2D88300D054FD /* SCLTimerDisplay.m */,
-				756066C31CC2D88300D054FD /* SCLTextView.h */,
-				756066C41CC2D88300D054FD /* SCLTextView.m */,
-			);
-			name = SCLAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,9 +378,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756066741CC2C2F200D054FD /* Info.plist in Resources */,
 				756066461CC2BE2E00D054FD /* LaunchScreen.storyboard in Resources */,
 				756066431CC2BE2E00D054FD /* Assets.xcassets in Resources */,
+				756066D81CC2DD7D00D054FD /* Info.plist in Resources */,
 				7560663E1CC2BE2E00D054FD /* Main.storyboard in Resources */,
 				756066AC1CC2D2DB00D054FD /* GooglePlacesCell.xib in Resources */,
 				756066AB1CC2D2DB00D054FD /* GooglePlacesAutocomplete.xib in Resources */,
@@ -398,22 +408,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756066C61CC2D88300D054FD /* SCLAlertView.m in Sources */,
-				756066C81CC2D88300D054FD /* SCLAlertViewResponder.m in Sources */,
+				754FED101CC2DE5300D19E9E /* UIImage+ImageEffects.m in Sources */,
+				754FED0A1CC2DE5300D19E9E /* SCLAlertView.m in Sources */,
+				754FED0D1CC2DE5300D19E9E /* SCLButton.m in Sources */,
+				754FED0B1CC2DE5300D19E9E /* SCLAlertViewResponder.m in Sources */,
 				756066B21CC2D2DB00D054FD /* PinAnnotation.swift in Sources */,
-				756066B01CC2D2DB00D054FD /* MapKitVC.swift in Sources */,
-				756066CA1CC2D88300D054FD /* SCLTimerDisplay.m in Sources */,
+				754FED0F1CC2DE5300D19E9E /* SCLTimerDisplay.m in Sources */,
 				756066AE1CC2D2DB00D054FD /* AppDelegate.swift in Sources */,
-				756066C71CC2D88300D054FD /* SCLButton.m in Sources */,
-				756066B41CC2D5EC00D054FD /* testViewController.swift in Sources */,
+				756066B41CC2D5EC00D054FD /* MapKitVC.swift in Sources */,
 				756066AA1CC2D2DB00D054FD /* GooglePlacesAutocomplete.swift in Sources */,
 				756066AD1CC2D2DB00D054FD /* GooglePlacesTableViewCell.swift in Sources */,
-				756066CB1CC2D88300D054FD /* SCLTextView.m in Sources */,
-				756066C91CC2D88300D054FD /* SCLAlertViewStyleKit.m in Sources */,
-				756066C51CC2D88300D054FD /* UIImage+ImageEffects.m in Sources */,
 				756066AF1CC2D2DB00D054FD /* Singleton.swift in Sources */,
+				754FED091CC2DE5300D19E9E /* JSSAlertView.swift in Sources */,
 				7560667D1CC2C4F800D054FD /* HackaBike.xcdatamodeld in Sources */,
 				756066B11CC2D2DB00D054FD /* MapHelper.swift in Sources */,
+				754FED0E1CC2DE5300D19E9E /* SCLTextView.m in Sources */,
+				754FED0C1CC2DE5300D19E9E /* SCLAlertViewStyleKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,10 +566,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulo.HackaBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackaBike-Bridging-Header";
 			};
 			name = Debug;
 		};
@@ -568,10 +579,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HackaBike/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulo.HackaBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackaBike-Bridging-Header";
 			};
 			name = Release;
 		};
@@ -642,6 +654,7 @@
 				756066621CC2BE2E00D054FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		756066631CC2BE2E00D054FD /* Build configuration list for PBXNativeTarget "HackaBikeTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +663,7 @@
 				756066651CC2BE2E00D054FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		756066661CC2BE2E00D054FD /* Build configuration list for PBXNativeTarget "HackaBikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +672,7 @@
 				756066681CC2BE2E00D054FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

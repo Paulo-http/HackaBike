@@ -1,23 +1,17 @@
 //
 //  MapKitVC.swift
-//  HackaBike
+//  FinalChallenge
 //
-//  Created by Paulo Henrique Leite on 16/04/16.
-//  Copyright © 2016 Paulo Henrique Leite. All rights reserved.
+//  Created by Ramon Honorio on 9/17/15.
+//  Copyright (c) 2015 Humberto Vieira de Castro. All rights reserved.
 //
 
 import UIKit
-import MapKit
+import MapKitVC
 
 class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, GooglePlacesAutocompleteDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
-    
-    // Helpers endereco
-    var userAddress: String?
-    var userNumber: Int?
-    var addressPlace: Place?
-    var addressClosed = false
     
     // Distancia inicial de abrangencia (Zoom)
     let regionRadius: CLLocationDistance = 1000
@@ -25,37 +19,47 @@ class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
     // Pin da localizacao
     var pinAnnotation: PinAnnotation!
     
-    var blurMapBackground = UIView()
-    
     // Busca de enderecos
-    var gpaViewController = GooglePlacesAutocomplete (
+    var gpaViewController = GooglePlacesAutocomplete(
         // Server API Key, esta na conta do Ramon
         apiKey: "AIzaSyCuUsA5Yw9i59zjSU-cyNOimualxC2HqkM",
         placeType: .Address
     )
+    
+    // Helpers endereco
+    var userAddress: String?
+    var userNumber: Int?
+    var addressPlace: Place?
+    var addressClosed = false
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    var blurMapBackground = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gpaViewController.gpaViewController.delegate = self
         
+        pageControl.currentPage = 2
+        
         // Configurando a mapview
         mapView.delegate = self
         
         // Detectando a posicao atual do usuario em background
-        PFGeoPoint.geoPointForCurrentLocationInBackground { (geopoint, error) -> Void in
-            if let geopoint = geopoint as PFGeoPoint? {
-                // Guardando a localizacao no tipo CLLocation (para a mapView)
-                let localizacaoCL = CLLocation(latitude: geopoint.latitude, longitude:geopoint.longitude)
-                
-                // Adicionando um pin dessa localizacao no mapa
-                self.adicionarPinAoMapa(geopoint.latitude, longitude: geopoint.longitude)
-                
-                // Centralizando o mapa
-                self.centerMapOnLocation(localizacaoCL)
-                self.gpaViewController.gpaViewController.getPlacesReversed(geopoint.latitude, longitude: geopoint.longitude)
-            }
-        }
+        //        PFGeoPoint.geoPointForCurrentLocationInBackground { (geopoint, error) -> Void in
+        //            if let geopoint = geopoint as PFGeoPoint? {
+        //                // Guardando a localizacao no tipo CLLocation (para a mapView)
+        //                let localizacaoCL = CLLocation(latitude: geopoint.latitude, longitude:geopoint.longitude)
+        //                
+        //                // Adicionando um pin dessa localizacao no mapa
+        //                self.adicionarPinAoMapa(geopoint.latitude, longitude: geopoint.longitude)
+        //                
+        //                // Centralizando o mapa
+        //                self.centerMapOnLocation(localizacaoCL)
+        //                self.gpaViewController.gpaViewController.getPlacesReversed(geopoint.latitude, longitude: geopoint.longitude)
+        //            }
+        //        }
         
         blurMapBackground.frame.size = screenSize()
         blurMapBackground.backgroundColor = UIColorFromHex(0x000000, alpha: 0.8)
@@ -70,13 +74,13 @@ class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
         if self.userNumber == nil {
             showStreetNumberAlert()
         } else {
-            // Convertendo a localizacao do pin para um PFGeoPoint, para salvar no Parse
-            let localizacaoGP = PFGeoPoint(latitude: self.pinAnnotation.coordinate.latitude, longitude: self.pinAnnotation.coordinate.longitude)
-            // Definindo essa localizacao no usuario
-            self.usuarioAtual?.setObject(localizacaoGP, forKey: "localizacao");
-            self.usuarioAtual?.setObject(self.userAddress!, forKey: "endereco");
-            self.usuarioAtual?.setObject(self.userNumber!, forKey: "numEndereco");
-            self.performSegueWithIdentifier("segueConfirm", sender: self)
+            //            // Convertendo a localizacao do pin para um PFGeoPoint, para salvar no Parse
+            //            let localizacaoGP = PFGeoPoint(latitude: self.pinAnnotation.coordinate.latitude, longitude: self.pinAnnotation.coordinate.longitude)
+            //            // Definindo essa localizacao no usuario
+            //            self.usuarioAtual?.setObject(localizacaoGP, forKey: "localizacao");
+            //            self.usuarioAtual?.setObject(self.userAddress!, forKey: "endereco");
+            //            self.usuarioAtual?.setObject(self.userNumber!, forKey: "numEndereco");
+            //            self.performSegueWithIdentifier("segueConfirm", sender: self)
         }
     }
     
@@ -130,7 +134,6 @@ class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
             let pinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "myPin")
             if #available(iOS 9.0, *) {
                 pinAnnotationView.pinTintColor = UIColor(red: 99/255, green: 71/255, blue: 92/255, alpha: 0.75)
-                
             } else {
                 // Fallback on earlier versions
             }
@@ -140,27 +143,6 @@ class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
             return pinAnnotationView
         }
         return nil
-    }
-    
-    func saveAllData() {
-        let dao = DAOUsuario()
-        if (dao.insereUsuario(PFUser.currentUser()!)) {
-            /* Colocar pro unwide pra homeview */
-        }
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        self.navigationController?.navigationBar.alpha = 0.7
-        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-        super.viewWillDisappear(animated)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueConfirm" {
-            let dvc = segue.destinationViewController as? SignUp4thViewController
-            dvc?.usuarioAtual = self.usuarioAtual
-        }
     }
     
     @IBAction func changeAddress(sender: AnyObject) {
@@ -174,11 +156,7 @@ class MapKitVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
         // Apresenta a view controller
         presentViewController(gpaViewController, animated: true, completion: nil)
     }
-}
-
-// Extensao da mesma classe (SignUp3rd)
-// So para organizar melhor para configurarmos algumas acoes com relacao a busca por enderecos
-extension SignUp3rdViewController: GooglePlacesAutocompleteDelegate {
+    
     func placeSelected(place: Place) {
         self.addressPlace = place
         placeViewSave()
@@ -214,7 +192,7 @@ extension SignUp3rdViewController: GooglePlacesAutocompleteDelegate {
         self.showStreetNumberAlert()
     }
     
-    func showStreetNumberAlert(){
+    func showStreetNumberAlert() {
         let alert = SCLAlertView()
         alert.shouldDismissOnTapOutside = true
         alert.setBodyTextFontFamily("FiraSans-Light", withSize: 17)
@@ -244,10 +222,4 @@ extension SignUp3rdViewController: GooglePlacesAutocompleteDelegate {
         }
         return screenSize
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
 }
